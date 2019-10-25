@@ -6,7 +6,7 @@ button {
     border-radius: 18px;
     box-shadow: 0 0 0 2px white inset;
 }
-div {
+.main {
     display: flex;
     height: 59px;
     width: 245px;
