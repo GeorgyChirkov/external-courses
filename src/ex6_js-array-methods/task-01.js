@@ -1,12 +1,15 @@
 function sliceAnalog(array, begin=0, end=array.length){
     if((begin<0)&&(end<0)){
-        begin = array.length+begin;//eslint-disable-line no-param-reassign
-        end = array.length+end;//eslint-disable-line no-param-reassign
+        newBegin = array.length+begin;
+        newEnd = array.length+end;
+    } else {
+        newBegin = begin;
+        newEnd = end;
     }
     let newArr = [];
     let countNew = 0;
-    let count = begin;
-    while ((countNew< end)&&(count<end)){
+    let count = newBegin;
+    while ((countNew< newEnd)&&(count<newEnd)){
         newArr[countNew] = array[count]; 
         countNew++;
         count++;
