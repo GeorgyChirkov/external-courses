@@ -1,7 +1,6 @@
 button {
     height: 80px;
     width: 269px;
-    /* background: -webkit-gradient(linear, 0 0, 0 100%, from(), to()); */
     border: 2px solid black;
     border-radius: 18px;
     box-shadow: 0 0 0 2px white inset;

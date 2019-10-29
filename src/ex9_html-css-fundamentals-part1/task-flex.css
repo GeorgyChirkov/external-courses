@@ -1,23 +1,27 @@
 body {
-    padding: 30px;
+  padding: 30px;
+  display: flex;
 }
 header {
-    background: lightblue;
+  background: lightblue;
+  flex: 1 100%
 }
 section {
-    background: lightgreen;
-    width: 75%;
-    float: left;
+  background: lightgreen;
+  flex: 1 75% 75%
 }
 article {
-    background: white;
-    margin: 0 0 1rem 0;
+  background: white;
+  margin: 0 0 1rem 0;
 }
 aside {
-    background: pink;
-    width: 25%;
-    float: right;
+  background: pink;
+  flex: 1 25%
 }
 header, article, section, .module {
-    padding: 1rem;
+  padding: 1rem;
+}
+main {
+  display: flex;
+  flex-flow: row wrap;
 }
