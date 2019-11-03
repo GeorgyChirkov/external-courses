@@ -1,0 +1,19 @@
+#zero {
+    background-color: green;
+    width: 50%;
+    height: 75%;    
+}
+#first {
+    background-color: rgb(53, 65, 184);
+    width: 50vh;
+    height: 10vw;
+}
+#second {
+    background-image: url(image-task.jpg);
+    width: 350px;
+    height: 250px;
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
