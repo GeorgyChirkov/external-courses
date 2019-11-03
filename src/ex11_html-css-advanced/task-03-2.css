@@ -1,6 +1,6 @@
 footer {
     background: #0067A3;
-    width: 100%;
+    flex: 1;
     height: 55px;
     display: flex;
     flex-direction: row;
