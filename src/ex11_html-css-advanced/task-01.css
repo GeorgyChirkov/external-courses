@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+}
+/* animation 1 */
+.loader {
+    border: 5px solid lightslategray;
+    border-radius: 50%;
+    border-top: 5px solid lightgray;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* animation 2 */
+.task2 {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+    position: relative;
+}
+.wall {
+    width: 250px;
+    height: 100px;
+    background: gray;
+}
+.ball {
+    border: 1px solid black;
+    background: red;
+    border-radius: 50%;
+    width: 25px;
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    height: 25px;
+    animation: bounce 3s linear infinite;
+}
+@keyframes bounce {
+    0% {
+        top: 0px;
+        left: 250px;
+    }
+    25% {
+        top: 0px;  
+        left: 725px;
+    }
+    50% {
+        top: 75px;
+        left: 250px;
+    }
+    75% {
+        top: 75px;
+        left: 725px;
+    }
+}
+/* animation 3 */
+.inf {
+    border: 1px solid black;
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: infin 5s linear infinite;
+}
+@keyframes infin {
+    0% {
+        background: linear-gradient(45deg, red, blue);
+    }
+    15% {
+        border-radius: 0px;
+    }
+    30% {
+        background: linear-gradient(45deg, white, black);
+    }
+    45% {
+        width: 100px;
+        height: 75px;
+        transform: skewX(-20deg);
+    }
+    60% {
+        transform: rotate(360deg);
+    }
+    80% {
+        background: linear-gradient(45deg, gray, purple);
+    }
+}
