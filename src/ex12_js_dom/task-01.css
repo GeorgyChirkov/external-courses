@@ -1,0 +1,44 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.gallery {
+    height: 750px;
+    width: 1000px;
+    border: 3px solid black;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn:focus {
+    outline: none;
+}
+.btn:focus {
+    outline: 2px solid pink;
+}
+.arrow {
+    height: 150px;
+    width: 150px;
+}
+@keyframes appearance  {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
