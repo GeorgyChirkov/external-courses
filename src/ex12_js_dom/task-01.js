@@ -6,13 +6,12 @@ window.onload = function(){
     let btnnext = document.querySelector("[class='btn btnnext']");
     let btnprev = document.querySelector("[class='btn btnprev']");
     let styles = "max-width: 100%; max-height: 100%; animation: appearance 500ms linear;";
-
     let i = 0;
 
     btnnext.addEventListener("click", nextImage);
-    document.addEventListener("keydown", (event) => {if (event.key === "ArrowRight") {nextImage()}})
+    document.addEventListener("keydown", (event) => {if (event.key === "ArrowRight") {nextImage()}});
     btnprev.addEventListener("click", prevImage);
-    document.addEventListener("keydown", (event) => {if (event.key === "ArrowLeft") {prevImage()}})    
+    document.addEventListener("keydown", (event) => {if (event.key === "ArrowLeft") {prevImage()}});  
 
     image.setAttribute("src", "./asset/"+imgarray[i]);
     image.setAttribute("style", styles);
@@ -21,7 +20,7 @@ window.onload = function(){
     function nextImage (){
         i++;
         if (i === imgarray.length) {
-            i = 0
+            i = 0;
         }
         image.setAttribute("src", "./asset/"+imgarray[i]);
         image.setAttribute("style", styles);
@@ -38,14 +37,4 @@ window.onload = function(){
         image.setAttribute("style", styles);
         gall.append(image);  
     }
-
-
-
-
-
-
-
-
-
 }
-
