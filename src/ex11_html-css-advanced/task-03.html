@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Kanban</title>
-    <link rel="stylesheet" href="task-03-1.css">
-    <link rel="stylesheet" href="task-03-2.css">
+    <link rel="stylesheet" href="task-03.css">
 </head>
 <body>
-    <main>
-        <header>
-            <div class="logo">
-                <img src="images/logo.svg" alt="logo" id="logo">
-                <p class="logo-text">Awesome Kanban Board</p>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo" class="logo-image">
+            <p class="logo-text">Awesome Kanban Board</p>
+        </div>
+        <div class="element-group">
+            <div class="new-list">
+                <img src="images/add-list.svg" alt="add-list" class="new-list-image">
+                <div class="new-list-text">Create new list</div>
             </div>
-            <div class="elements">
-                <div class="new-list">
-                    <img src="images/add-list.svg" alt="add-list" id="add">
-                    <div class="add-text">Create new list</div>
-                </div>
-                <div class="user-menu">
-                    <img src="images/user-avatar.svg" alt="avatar" id="avatar">
-                    <img src="images/arrow-down.svg" alt="arrow-down" id="arrow">
-                </div>
+            <div class="user-menu">
+                <img src="images/user-avatar.svg" alt="avatar" id="avatar">
+                <img src="images/arrow-down.svg" alt="arrow-down" id="arrow">
             </div>
-        </header>
-        <section></section>
-        <footer>
-            <div class="footer-text">
-                <div class="footer-text-left">
-                    <div class="active">Active tasks: &lt;N&gt;</div>
-                    <div class="finished">Finished tasks: &lt;M&gt;</div>
-                </div>
-                <div class="author">Kanban board by Chirkov G., 2019</div>
+        </div>
+    </header>
+    <main></main>
+    <footer>
+        <div class="footer-content">
+            <div class="task-stat">
+                <div class="active">Active tasks: &lt;N&gt;</div>
+                <div class="finished">Finished tasks: &lt;M&gt;</div>
             </div>
-        </footer>
-    </main>
+            <div class="author">Kanban board by Chirkov G., 2019</div>
+        </div>
+    </footer>
 </body>
 </html>
