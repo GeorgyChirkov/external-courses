@@ -65,7 +65,7 @@ header {
     align-items: center;
     cursor: pointer;
 }
-#avatar {
+.avatar {
     border-radius: 20px;
     background: #FFFFFF;
 }
