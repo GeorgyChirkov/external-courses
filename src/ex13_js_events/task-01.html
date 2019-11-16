@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="task-01.css">
+    <script src="task-01.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo" class="logo-image">
+            <p class="logo-text">Awesome Kanban Board</p>
+        </div>
+        <div class="element-group">
+            <div class="new-list">
+                <img src="images/add-list.svg" alt="add-list" class="new-list-image">
+                <div class="new-list-text">Create new list</div>
+            </div>
+            <div class="user-menu">
+                <div class="profile">
+                    <img src="images/user-avatar.svg" alt="avatar" class="avatar">
+                    <img src="images/arrow-down.svg" alt="arrow-down" class="arrow">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="backlog">
+            <div class="top">
+                <div>Backlog</div>
+                <div>...</div>
+            </div>
+            <div class="mid">
+            </div>
+
+            <div class="bot">
+                <div class="add-new-card">+Add Task</div>
+            </div>
+        </div>
+        <div class="ready">
+            <div class="top">
+                <div>Ready</div>
+                <div>...</div>
+            </div>
+            <div class="bot">
+                <div class="add-card">+ Add Card</div>
+            </div>
+        </div>
+        <div class="inprogress">
+            <div class="top">
+                <div>In Progress</div>
+                <div>...</div>
+            </div>
+            <div class="bot">
+                <div class="add-card">+ Add Card</div>
+            </div>
+        </div>
+        <div class="finished">
+            <div class="top">
+                <div>Finished</div>
+                <div>...</div>
+            </div>
+            <div class="bot">
+                <div class="add-card">+ Add Card</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="task-stat">
+                <div class="active-task">Active tasks: &lt;N&gt;</div>
+                <div class="finished-task">Finished tasks: &lt;M&gt;</div>
+            </div>
+            <div class="author">Kanban board by Chirkov G., 2019</div>
+        </div>
+    </footer>
+</body>
+</html>
