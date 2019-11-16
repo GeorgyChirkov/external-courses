@@ -1,40 +1,39 @@
-let imgarray = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+let images = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
 
 window.onload = function(){
-    let gall = document.querySelector(".gallery");
+    let gallery = document.querySelector(".gallery");
     let image = document.createElement("img");
-    let btnnext = document.querySelector("[class='btn btnnext']");
-    let btnprev = document.querySelector("[class='btn btnprev']");
+    let btnNext = document.querySelector("#btnnext");
+    let btnPrev = document.querySelector("#btnprev");
     let styles = "max-width: 100%; max-height: 100%; animation: appearance 500ms linear;";
     let i = 0;
 
-    btnnext.addEventListener("click", nextImage);
-    document.addEventListener("keydown", (event) => {if (event.key === "ArrowRight") {nextImage()}});
-    btnprev.addEventListener("click", prevImage);
-    document.addEventListener("keydown", (event) => {if (event.key === "ArrowLeft") {prevImage()}});  
+    btnNext.addEventListener("click", getNextImage);
+    document.addEventListener("keydown", (event) => {if (event.key === "ArrowRight") {getNextImage()}});
+    btnPrev.addEventListener("click", getPrevImage);
+    document.addEventListener("keydown", (event) => {if (event.key === "ArrowLeft") {getPrevImage()}});  
 
-    image.setAttribute("src", "./asset/"+imgarray[i]);
+    image.setAttribute("src", "./asset/"+images[i]);
     image.setAttribute("style", styles);
-    gall.append(image);
+    gallery.append(image);
 
-    function nextImage (){
+    function getNextImage (){
         i++;
-        if (i === imgarray.length) {
+        if (i === images.length) {
             i = 0;
         }
-        image.setAttribute("src", "./asset/"+imgarray[i]);
+        image.setAttribute("src", "./asset/"+images[i]);
         image.setAttribute("style", styles);
-
-        gall.append(image);
+        gallery.append(image);
     }
     
-    function prevImage (){
+    function getPrevImage (){
         i--;
         if (i < 0) {
-            i = imgarray.length-1;
+            i = images.length-1;
         }
-        image.setAttribute("src", "./asset/"+imgarray[i]);
+        image.setAttribute("src", "./asset/"+images[i]);
         image.setAttribute("style", styles);
-        gall.append(image);  
+        gallery.append(image);  
     }
 }
