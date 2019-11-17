@@ -38,13 +38,23 @@ main {
     height: 17px;
     margin-top: 12px;
 }
+.bot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 258px;
+}
 .add-card, .add-new-card {
     color: #5E6C84;
-    width: 233px;
     margin-bottom: 8px;
     cursor: pointer;
+    border: none;
+    background: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
 }
-/* header */
 header {
     background: #0067A3;
     height: 55px;
@@ -116,7 +126,6 @@ header {
 .new-list-image {
     margin-left: 9px;
 }
-/* footer */
 footer {
     background: #0067A3;
     height: 55px;
