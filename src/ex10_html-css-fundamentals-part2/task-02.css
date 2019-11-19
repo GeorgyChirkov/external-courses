@@ -1,0 +1,29 @@
+.fio, .contact {
+    display: flex;
+    flex-direction: column;
+}
+.fio>*, .contact>* {
+    margin: 10px;
+}
+#age {
+    margin: 10px;
+}
+.city {
+    margin: 10px;
+    margin-left: 0px;
+}
+#photo {
+    margin-bottom: 10px;
+}
+.title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.pass {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,21 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: center;
+    color: rgb(117, 134, 151);
+}
+th {
+    font-size: 8pt;
+    text-transform: uppercase;
+    text-align: center;
+}
+tr>td {
+    font-size: 10pt;
+    padding-left: 15px;
+}
+tr>td:nth-child(2) {
+    text-align: center;
+    padding: 0;
+}
+tr>td:first-child {
+    text-transform: capitalize;
+}
