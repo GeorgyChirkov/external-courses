@@ -20,13 +20,27 @@ window.onload = function() {
     font-style: normal; 
     font-weight: normal; 
     font-size: 18px;`
+    let menuContentStyle = 
+    `box-shadow: 0 0 5px black; 
+    background: #0067A3; 
+    width: 150px; 
+    height: auto; 
+    display: flex; 
+    flex-direction:column; 
+    justify-content: space-around; 
+    align-items: center; 
+    border-radius: 15px; 
+    border: 2px solid white; 
+    position: absolute; 
+    top: 50px; 
+    right: 5px`
     profile.addEventListener("click", getMenu, {once: true});
 
     function getMenu() {
         arrow[0].setAttribute("style", "transform: rotate(180deg)");
         arrow[0].setAttribute("class", "arrow-clicked");
         menuContent.setAttribute("class", "menu");
-        menuContent.setAttribute("style", "box-shadow: 0 0 5px black; background: #0067A3; width: 150px; height: auto; display: flex; flex-direction:column; justify-content: space-around; align-items: center; border-radius: 15px; border: 2px solid white; position: absolute; top: 50px; right: 5px");
+        menuContent.setAttribute("style", menuContentStyle);
         myAccount.setAttribute("class", "my-account");
         myAccount.setAttribute("style", btnStyle);
         myAccount.setAttribute("onmouseover", "style.background='#EBECF0'");
