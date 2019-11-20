@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task-02</title>
+    <link rel="stylesheet" href="task-02.css">
+</head>
+<body>
+    <form action="/http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Personal data</legend>
+            <div class="fio">
+                <label for="surname">Surname
+                    <input type="text" name="surname" id="surname">
+                </label>
+                <label for="firstName">First Name
+                    <input type="text" name="firstName" id="firstName">
+                </label>
+                <label for="middleName">Middle name
+                    <input type="text" name="middleName" id="middleName">
+                </label>
+            </div>
+            <div class="sex">
+                <span>You are</span>
+                <input type="radio" name="sex" id="male" value="male">male
+                <input type="radio" name="sex" id="female" value="female">female
+            </div>
+            <div class="age">
+                <label for="age">Age
+                <input type="number" name="age" id="age" min="18" max="101">
+                </label>
+            </div>
+            <div class="country">
+                <label for="country">Country of Residence
+                    <select name="country" id="country">
+                        <option value="null" selected></option>
+                        <option value="Russia">Russia</option>
+                        <option value="USA">USA</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+            </div>
+            <div class="city">
+                <label for="city">City
+                    <input type="checkbox" name="city" id="ryazan" value="Ryazan">Ryazan
+                    <input type="checkbox" name="city" id="moscow" value="Moscow">Moscow
+                </label>
+            </div>
+            <div class="photo">
+                <label for="photo">Photography
+                    <input type="file" name="photo" id="photo">
+                </label>
+            </div>
+            <hr>
+            <div class="title">
+                <label for="title">Title
+                    <select size="8" name="title" id="title" multiple>
+                        <optgroup label="Technologies">
+                            <option value="Web Master">Web Master</option>
+                            <option value="Database Administrator">Database Administrator</option>
+                            <option value="Computer-aided design">Computer-aided design</option>
+                        </optgroup>
+                        <optgroup label="Finance">
+                            <option value="Economic Planning">Economic Planning</option>
+                            <option value="Management accounting">Management accounting</option>
+                            <option value="Budgeting and planning">Budgeting and planning</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </div>
+            <div class="salary">
+                <label for="salary">Salary
+                    <input type="range" name="salary" id="salary" min="0" max="100">
+                </label>
+            </div>
+            <div class="text">
+                <textarea name="text" id="text" cols="50" rows="10" placeholder="Tell us about youself..."></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="contact">
+                <label for="site">Site
+                    <input type="url" name="site" id="site">
+                </label>
+                <label for="email">Email
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="phone">Phone
+                    <input type="tel" name="phone" id="phone">
+                </label>
+            </div>
+        </fieldset>
+        <div class="pass">
+            <label for="password">Password
+                <input type="password" name="password" id="pass" required>
+            </label>
+        </div>
+        <div class="button">
+            <input type="submit" name="send" id="send" value="Отправить">
+            <input type="reset" name="reset" id="reset" value="Сбросить">
+        </div>
+    </form>
+</body>
+</html>
