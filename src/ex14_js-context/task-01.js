@@ -28,8 +28,7 @@ const Calculator = {
         return this
     },
     fetchData(callback) {
-        const cb = callback.bind(this)
-        setTimeout(() => cb(500), 500)
+        setTimeout(() => callback(500), 500)
         return this
     }
 }
