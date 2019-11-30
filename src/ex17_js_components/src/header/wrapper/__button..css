@@ -1,0 +1,14 @@
+@import "button/__image.css";
+@import "button/__text.css";
+.wrapper__button {
+    width: 181px;
+    height: 33px;     
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 0px;
+    border: 0px
+}
