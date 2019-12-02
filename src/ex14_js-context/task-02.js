@@ -1,44 +1,44 @@
 function Hangman(word) {
     this.word = word;
-    this.wordLow = this.word.toLowerCase();
-    this.wordTry = this.word.replace(/\w/g, "_").split("");
+    this.lowerCaseWord = this.word.toLowerCase();
+    this.guessedWord = this.word.replace(/\w/g, "_").split("");
     this.errors = 6;
-    this.wrongSimbols = [];
-    this.won = false;
+    this.symbols = [];
+    this.isWon = false;
 
     this.guess = function(char) {
-        if ( this.won || char === " ") {
+        if ( this.isWon || char === " ") {
             return this
         }
 
          let letter = char.toLowerCase();
 
-        if ( this.wrongSimbols.indexOf(letter) !== -1 || this.wordTry.indexOf(letter) !== -1){
+        if ( this.symbols.indexOf(letter) !== -1 || this.guessedWord.indexOf(letter) !== -1){
             console.log("You have already entered this letter")
             return this;
         } 
 
-        let index = this.wordLow.indexOf(letter); 
+        let index = this.lowerCaseWord.indexOf(letter); 
 
         if (index === -1) {
-            this.wrongSimbols.push(letter);
+            this.symbols.push(letter);
             this.errors--;
             if (this.errors < 0){
-                this.won = false;
+                this.isWon = false;
                 console.log(`${this.word} | You loose!`);
                 return this;
             }
-            console.log(`wrong letter, errors left ${this.errors} | ${this.wrongSimbols}`);
+            console.log(`wrong letter, errors left ${this.errors} | ${this.symbols}`);
             return this;
         }
 
         while (index !== -1) {
-            this.wordTry[index] = this.word[index];
-            index = this.wordLow.indexOf(letter, index + 1);
+            this.guessedWord[index] = this.word[index];
+            index = this.lowerCaseWord.indexOf(letter, index + 1);
         }
-        console.log(`${this.wordTry.join("")}`)
-        if (this.wordTry.join("") === this.word){
-            this.won = true;
+        console.log(`${this.guessedWord.join("")}`)
+        if (this.guessedWord.join("") === this.word){
+            this.isWon = true;
             console.log(`${this.word} | You won!`);
             return this;
         }
@@ -46,12 +46,12 @@ function Hangman(word) {
     }
 
     this.getStatus = function() {
-        console.log(`${this.wordTry.join("")} | errors left: ${this.errors}`);
+        console.log(`${this.guessedWord.join("")} | errors left: ${this.errors}`);
         return this;
     }
 
     this.getGuessedString = function() {
-        return this.wordTry.join("")
+        return this.guessedWord.join("")
     }
 
     this.getErrorsLeft = function() {
@@ -59,16 +59,16 @@ function Hangman(word) {
     }
 
     this.getWrongSymbols = function() {
-        return this.wrongSimbols
+        return this.symbols
     }
 
     this.startAgain = function(word) {
         this.word = word;
-        this.wordLow = this.word.toLowerCase();
-        this.wordTry = this.word.replace(/\w/g, "_").split("");
+        this.lowerCaseWord = this.word.toLowerCase();
+        this.guessedWord = this.word.replace(/\w/g, "_").split("");
         this.errors = 6;
-        this.wrongSimbols = [];
-        this.won = false;
+        this.symbols = [];
+        this.isWon = false;
         return this;
     } 
 
