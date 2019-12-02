@@ -28,7 +28,7 @@ const Calculator = {
         return this
     },
     fetchData(callback) {
-        setTimeout(() => callback(500), 500)
+        setTimeout(() => callback(this.result = 500), 500)
         return this
     }
 }
