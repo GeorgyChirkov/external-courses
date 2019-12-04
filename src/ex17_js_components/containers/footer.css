@@ -1,0 +1,9 @@
+@import "./../components/footer-content.css";
+footer {
+    background: #0067A3;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 auto;
+}

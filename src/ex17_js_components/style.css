@@ -1,0 +1,12 @@
+@import "containers/header.css";
+@import "containers/main.css";
+@import "containers/footer.css";
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}

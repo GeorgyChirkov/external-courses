@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-image {
+    margin-left: 14px;
+}
+.logo-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-left: 8px;
+}
