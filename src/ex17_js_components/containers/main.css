@@ -1,0 +1,10 @@
+@import "./../components/list.css";
+main {
+    flex: 1 0 auto;
+    background: rgb(0, 121, 191);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}

@@ -1,7 +1,7 @@
-@import "../styles.default/text.css";
-@import "../styles.default/button.css";
-@import "header/header.css";
-.page {
+@import "containers/header.css";
+@import "containers/main.css";
+@import "containers/footer.css";
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,7 +1,10 @@
-@import "__avatar.css";
-.user {
+.profile {
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+}
+.avatar {
+    border-radius: 20px;
+    background: #FFFFFF;
 }

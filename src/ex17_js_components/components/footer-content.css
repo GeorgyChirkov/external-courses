@@ -1,0 +1,22 @@
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.task-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 333px;
+    margin-left: 67px;
+}
+.author {
+    margin-right: 24px;
+}
